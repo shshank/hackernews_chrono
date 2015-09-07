@@ -1,0 +1,31 @@
+
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <span style="margin-left:50px;">
+            <a class="brand" href="/">HN Clone</a>
+        </span>
+
+
+        
+        {% if session.get('id') is not none %}
+
+            <ul class="nav pull-right">
+                <span style="margin-right:30px;">
+                    <a href="{{ url_for('logout')}}">Logout</a>
+                </span>
+            </ul>
+
+            {% if session.get('user_type')==5 %}
+            <ul class="nav pull-right">
+                <span style="margin-right:10px;">
+                    <a href="{{ url_for('fetch_new') }}">Fetch New</a>
+                </span>
+            </ul>
+            {% endif %}
+
+
+        {% endif %}
+    
+    </div>
+</div>

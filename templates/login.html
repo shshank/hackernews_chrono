@@ -1,0 +1,57 @@
+{% block title %} Login {% endblock %}
+{% extends "base.html" %}
+
+{% block body %}
+
+<div class="form-container">
+    <h3> Sign In </h3>
+    <form class="form-horizontal" method="POST" action='{{'/login?next=' + next_url}}'>
+        <div class="control-group">
+            <label class="control-label" for="inputUsername">Username</label>
+            <div class="controls">
+                <input name="username" type="text" id="inputUsername" placeholder="UserName">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputPassword">Password</label>
+            <div class="controls">
+                <input name="password" type="password" id="inputPassword" placeholder="Password">
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <button type="submit" class="btn">Sign in</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<div class="form-container">
+    <h3> Register </h3>
+    <form class="form-horizontal" method="POST" action='{{'/register?next=' + next_url}}'>
+        <div class="control-group">
+            <label class="control-label" for="inputUsername">Username</label>
+            <div class="controls">
+                <input name="username" type="text" id="inputUsername" placeholder="UserName">
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label" for="inputPassword">Password</label>
+            <div class="controls">
+                <input name="password" type="password" id="inputPassword" placeholder="Password">
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <button type="submit" class="btn">Register</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
+
+{% block js %}
+<script src="{{ url_for('static', filename='js/validate.js') }}"></script>
+{% endblock %}
