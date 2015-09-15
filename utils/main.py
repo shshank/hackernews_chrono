@@ -77,7 +77,7 @@ def get_domain_from_url(url):
     return the input in case of error while parsing.
     """
     try:
-        netloc = urlparse.urlparse('http://www.washingtonpost.com').netloc
+        netloc = urlparse.urlparse(url).netloc
         domain = '.'.join(netloc.split('.')[1:]) if netloc.startswith('www.') else netloc
         return domain
     except:
