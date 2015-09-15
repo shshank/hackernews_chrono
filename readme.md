@@ -1,6 +1,6 @@
-#HackerNews
+#HackerNews_Chrome
 
-(https://news.ycombinator.com/) is very popular website among developers for latest news and projects. However sorting of the items is done via their own algorithms. Hackernews_Chrono keeps getting the top 90 articles and shows them in reverse chronological order. 
+Hackernews (https://news.ycombinator.com/) is very popular website among developers for latest news and projects. However sorting of the items is done via their own algorithms. Hackernews_Chrono keeps getting the top 90 articles and shows them in reverse chronological order. 
 
 
 ##Features:
