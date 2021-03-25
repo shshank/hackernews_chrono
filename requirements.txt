@@ -9,7 +9,7 @@ MarkupSafe==0.23
 MySQL-python==1.2.3
 Flask-Session==0.2.1
 PAM==0.4.2
-PyYAML==3.10
+PyYAML==5.4
 SQLAlchemy==1.0.8
 Twisted-Core==13.2.0
 Twisted-Names==13.2.0
